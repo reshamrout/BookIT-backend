@@ -11,12 +11,12 @@ const promoRoutes = require('./routes/promo');
 const app = express();
 const allowedOrigins = [
   'https://book-it-frontend-3wmgtjdnj-resham-routs-projects.vercel.app',
-  'http://localhost:3000' // for local development
+  'http://localhost:5173' 
 ];
 
 app.use(cors({
   origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl requests)
+    
     if (!origin) return callback(null, true);
     
     if (allowedOrigins.indexOf(origin) === -1) {
@@ -25,7 +25,7 @@ app.use(cors({
     }
     return callback(null, origin);
   },
-  credentials: true // Important: allow credentials
+  credentials: true 
 }));
 
 
