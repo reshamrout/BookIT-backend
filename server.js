@@ -11,7 +11,7 @@ const promoRoutes = require('./routes/promo');
 const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://http://book-it-backend-opal.vercel.app/'
+  'https://book-it-frontend-l7ai3af0q-resham-routs-projects.vercel.app'
 ];
 
 app.use(
