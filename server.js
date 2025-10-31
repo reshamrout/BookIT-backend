@@ -9,7 +9,18 @@ const bookingsRoutes = require('./routes/bookings');
 const promoRoutes = require('./routes/promo');
 
 const app = express();
-app.use(cors());
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://http://book-it-backend-opal.vercel.app/'
+];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 app.use(morgan('dev'));
