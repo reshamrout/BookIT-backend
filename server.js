@@ -9,22 +9,13 @@ const bookingsRoutes = require('./routes/bookings');
 const promoRoutes = require('./routes/promo');
 
 const app = express();
-
-const allowedOrigins = [
-  'https://book-it-frontend-aqwsfqm3v-resham-routs-projects.vercel.app',
-  'https://book-it-frontend-two.vercel.app'
-];
+const cors = require('cors');
 
 app.use(cors({
-  origin: function(origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true
+  origin: '*', // allow all origins
+  credentials: false // or just omit it
 }));
+;
 
 app.use(express.json());
 app.use(morgan('dev'));
