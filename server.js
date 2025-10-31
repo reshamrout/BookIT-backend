@@ -9,7 +9,14 @@ const bookingsRoutes = require('./routes/bookings');
 const promoRoutes = require('./routes/promo');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://book-it-frontend.vercel.app', // your deployed frontend
+    'http://localhost:5173'                // local development
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(express.json());
 app.use(morgan('dev'));
 
