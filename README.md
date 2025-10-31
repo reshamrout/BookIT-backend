@@ -32,24 +32,24 @@ MONGO_URI= <your_url>
 
 4. **🌱 Seeding Sample Data**
 
-You can populate your database with sample experiences using:
-node seed.js
-This will connect to MongoDB and insert sample travel experience data.
+You can populate your database with sample experiences using:  
+node seed.js  
+This will connect to MongoDB and insert sample travel experience data.  
 
 
 5. **Start the server**
     npm run dev
 
-The server will start at 👉 http://localhost:5000
+The server will start at 👉 http://localhost:5000  
 
 🧪 Testing the APIs
 
-You can test all API routes using Postman or Thunder Client.
-Example endpoints:
-Method	Endpoint	Description
-GET	/api/experiences	Get all experiences
-GET	/api/experiences/:id	Get a single experience
-POST	/api/experiences	Add a new experience
+You can test all API routes using Postman or Thunder Client.  
+Example endpoints:  
+Method	Endpoint	Description  
+GET	/api/experiences	Get all experiences  
+GET	/api/experiences/:id	Get a single experience  
+POST	/api/experiences	Add a new experience  
 
 
 **Features**
