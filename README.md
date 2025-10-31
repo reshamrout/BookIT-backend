@@ -62,7 +62,7 @@ Seed script for sample data
 
 CORS enabled for frontend connection
 
-💡 Author
-Developed by Resham Rout
-📧 [reshamrout@gmail.com]
+💡 Author/
+Developed by Resham Rout/
+📧 [reshamrout@gmail.com]/
 🚀 MCA'26 @ VIT University
