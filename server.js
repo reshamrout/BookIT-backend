@@ -11,7 +11,8 @@ const promoRoutes = require('./routes/promo');
 const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://book-it-frontend-l7ai3af0q-resham-routs-projects.vercel.app'
+  'https://book-it-frontend-l46ep8379-resham-routs-projects.vercel.app',
+  'https://book-it-frontend-two.vercel.app'
 ];
 
 // Explicit CORS middleware
@@ -24,10 +25,8 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
 
-  // Handle preflight request
-  if (req.method === 'OPTIONS') {
-    return res.sendStatus(204);
-  }
+  // Handle preflight
+  if (req.method === 'OPTIONS') return res.sendStatus(204);
 
   next();
 });
