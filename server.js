@@ -9,7 +9,6 @@ const bookingsRoutes = require('./routes/bookings');
 const promoRoutes = require('./routes/promo');
 
 const app = express();
-const cors = require('cors');
 
 app.use(cors({
   origin: '*', // allow all origins
