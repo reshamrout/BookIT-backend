@@ -27,8 +27,8 @@ It provides REST APIs for managing experiences, bookings, and user interactions.
 
 
 3. **Create a .env file**
-PORT=400/  
-MONGO_URI= <your_url>/  
+PORT=400  
+MONGO_URI= <your_url>  
 
 4. **🌱 Seeding Sample Data**
 
@@ -62,7 +62,7 @@ Seed script for sample data
 
 CORS enabled for frontend connection
 
-💡 Author/  
-Developed by Resham Rout/  
-📧 [reshamrout@gmail.com]/  
+💡 Author  
+Developed by Resham Rout   
+📧 [reshamrout@gmail.com]  
 🚀 MCA'26 @ VIT University
