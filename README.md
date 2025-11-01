@@ -1,8 +1,9 @@
 # Travel Booking Backend
-Live Link : https://book-it-frontend-two.vercel.app/
-
 This is the backend for the **Travel Booking Application**, built with **Node.js**, **Express**, and **MongoDB (Mongoose)**.  
-It provides REST APIs for managing experiences, bookings, and user interactions.
+It provides REST APIs for managing experiences, bookings, and user interactions.  
+
+Live Link : https://book-it-frontend-two.vercel.app/  
+Postman Documentation for APIs: https://documenter.getpostman.com/view/28836108/2sB3WpQLVC  
 
 ---
 ## 🚀 Tech Stack
